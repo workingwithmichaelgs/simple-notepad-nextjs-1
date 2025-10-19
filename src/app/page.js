@@ -1,6 +1,10 @@
+"use client";
+import Link from "next/link";
 import { Pencil, NotebookPen } from "lucide-react";
 
 export default function HomePage() {
+  
+
    const metadata = {
    title: "Notepad - Simple & Fun Online Notes",
   description:
@@ -41,18 +45,18 @@ export default function HomePage() {
         </p>
 
         <div className="flex justify-center gap-4">
-          <a
+          <Link
             href="/register"
             className="bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-2 px-6 rounded-full shadow-md transition-transform hover:scale-105"
           >
             📝 Get Started
-          </a>
-          <a
+          </Link>
+          <Link
             href="/login"
             className="bg-pink-400 hover:bg-pink-500 text-white font-semibold py-2 px-6 rounded-full shadow-md transition-transform hover:scale-105"
           >
             🔑 Login
-          </a>
+          </Link>
         </div>
 
         <div className="mt-8 text-sm text-gray-600">
