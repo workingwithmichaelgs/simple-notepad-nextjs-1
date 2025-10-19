@@ -1,0 +1,47 @@
+notepad-app/
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── auth/
+│   │   │   │   ├── register/route.js      # POST → register user
+│   │   │   │   └── login/route.js         # POST → login user
+│   │   │   ├── notes/
+│   │   │   │   ├── route.js               # GET (list) | POST (create)
+│   │   │   │   └── [id]/route.js          # GET (details) | PUT (update) | DELETE (remove)
+│   │   │   └── _middleware.js             # (optional) authentication middleware
+│   │   │
+│   │   ├── register/
+│   │   │   └── page.js                    # registration form UI
+│   │   ├── login/
+│   │   │   └── page.js                    # login form UI
+│   │   ├── notes/
+│   │   │   ├── page.js                    # list of notes
+│   │   │   ├── create/page.js             # create new note form
+│   │   │   └── [id]/page.js               # view/edit a single note
+│   │   ├── page.js                        # landing page
+│   │   └── layout.js                      # shared layout, font, etc.
+│   │
+│   ├── components/
+│   │   ├── Navbar.jsx                     # top navigation
+│   │   ├── NoteCard.jsx                   # reusable card for notes
+│   │   ├── FormInput.jsx                  # reusable text/email/password input
+│   │   └── Button.jsx                     # reusable button
+│   │
+│   ├── lib/
+│   │   ├── errorHandler.js                # centralized try/catch helper
+│   │   ├── bcrypt.js                      # bcrypt helpers (hash, compare)
+│   │   ├── fileUtils.js                   # read/write JSON data safely
+│   │   └── auth.js                        # simple token/session util
+│   │
+│   ├── data/
+│   │   ├── users.json                     # registered users
+│   │   └── notes.json                     # stored notes
+│   │
+│   └── styles/
+│       └── globals.css                    # Tailwind base and custom styles
+│
+├── public/
+│   └── favicon.ico
+│
+├── package.json
+└── next.config.js
