@@ -10,6 +10,7 @@ export default function RegisterPage() {
   const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
+    // console.log(email, password);
     e.preventDefault();
     try {
       const res = await fetch('/api/auth/register', {
