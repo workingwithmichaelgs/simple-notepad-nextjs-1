@@ -6,7 +6,8 @@ export default function Navbar({ showAddNote = false }) {
     const router = useRouter();
     const handleLogout = () => {
         console.log('Logout clicked');
-        router.push('/');
+        localStorage.removeItem('token');
+        router.push('/login');
       };
   return (
     <nav className="bg-yellow-200/90 backdrop-blur-sm p-4 flex justify-between items-center shadow-md border-b border-yellow-300">

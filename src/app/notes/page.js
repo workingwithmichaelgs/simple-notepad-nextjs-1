@@ -1,10 +1,19 @@
 "use client";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import NoteCard from '@/components/NoteCard';
 import notesData from '@/data/notes.json';
 import Navbar from '@/components/Navbar';
 
 export default function NotesPage() {
+    const router = useRouter();
+
+    useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) router.push('/login');
+  }, []);
+
+
   const [notes, setNotes] = useState(notesData);
 
   const handleDelete = (id) => {

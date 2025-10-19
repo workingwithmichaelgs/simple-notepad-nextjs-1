@@ -20,6 +20,7 @@ export default function RegisterPage() {
       });
 
       const data = await res.json();
+    //   console.log(data, "aku Data");
 
       if (res.ok) {
         setMessage('✅ ' + data.message);
@@ -52,7 +53,7 @@ export default function RegisterPage() {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            required
+            // required
             className="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-yellow-400"
           />
 

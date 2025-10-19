@@ -13,9 +13,9 @@ export default function LoginPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    router.push('/notes');
+    // router.push('/notes');
 
-    /* try {
+    try {
       const res = await fetch('/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -23,17 +23,18 @@ export default function LoginPage() {
       });
 
       const data = await res.json();
+    //   console.log(data, "aku Data");
 
       if (res.ok) {
+        localStorage.setItem('token', data.token);
         setMessage('✅ ' + data.message);
-        setEmail('');
-        setPassword('');
+        router.push('/notes');
       } else {
         setMessage('❌ ' + data.message);
       }
     } catch (err) {
       setMessage('❌ Network error');
-    } */
+    } 
   };
 
   return (

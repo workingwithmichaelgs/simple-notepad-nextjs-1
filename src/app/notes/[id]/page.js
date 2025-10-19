@@ -13,12 +13,19 @@ export default function NoteDetailPage() {
   const [note, setNote] = useState({ title: '', content: '' });
   const [message, setMessage] = useState('');
 
+useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) router.push('/login');
+  }, []);
+
   // Load note by id
   useEffect(() => {
     const found = notesData.find((n) => n.id === noteId);
     if (found) setNote(found);
     else setMessage('❌ Note not found');
   }, [noteId]);
+
+    
 
   const handleChange = (e) => {
     const { name, value } = e.target;
