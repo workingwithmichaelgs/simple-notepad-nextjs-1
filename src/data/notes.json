@@ -2,13 +2,13 @@
   {
     "id": "21f52897-723f-477b-bbcb-ae4c14620af9",
     "title": "Makanan Budi",
-    "content": "Ayam \nPasta\nKFC",
+    "content": "Ayam \nPasta\nKFC\nBurger",
     "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728"
   },
   {
     "id": "b1e97ef8-01bc-4f39-b360-0a124999f304",
     "title": "Minuman Budi",
-    "content": "Cola\nBeer",
+    "content": "Cola\nBeer\nFanta\nVodka",
     "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728"
   },
   {
@@ -16,5 +16,11 @@
     "title": "Makanan Cici",
     "content": "Pizza",
     "userId": "7c5caec0-f270-4201-b6be-9210abb887e8"
+  },
+  {
+    "id": "58000ed0-e685-4344-ba8a-9787fa907105",
+    "title": "Mobil Favorit",
+    "content": "BMW",
+    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728"
   }
 ]

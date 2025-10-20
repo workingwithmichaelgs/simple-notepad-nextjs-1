@@ -34,22 +34,25 @@ useEffect(() => {
   };
 
   const handleSave = async () => {
-    // try {
-    //   const res = await fetch('/api/notes/' + noteId, {
-    //     method: 'PUT',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(note),
-    //   });
+    console.log('Save clicked')
+    try {
+      const res = await fetch('/api/notes/' + noteId, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json',
+        Authorization: 'Bearer ' + localStorage.getItem('token')
+         },
+        body: JSON.stringify(note),
+      });
 
-    //   const data = await res.json();
-    //   if (res.ok) {
-    //     setMessage('✅ Note saved');
-    //   } else {
-    //     setMessage('❌ ' + data.message);
-    //   }
-    // } catch (err) {
-    //   setMessage('❌ Network error');
-    // }
+      const data = await res.json();
+      if (res.ok) {
+        setMessage('✅ Note saved');
+      } else {
+        setMessage('❌ ' + data.message);
+      }
+    } catch (err) {
+      setMessage('❌ Network error');
+    }
   };
 
   const handleCancel = () => {
