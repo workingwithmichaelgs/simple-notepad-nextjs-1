@@ -13,10 +13,11 @@ export default function NoteDetailPage() {
   const [note, setNote] = useState({ title: '', content: '' });
   const [message, setMessage] = useState('');
 
+  // protect route
 useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) router.push('/login');
-  }, []);
+  }, [router]);
 
   // Load note by id
   useEffect(() => {

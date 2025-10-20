@@ -1,17 +1,20 @@
 [
   {
-    "id": "1",
-    "title": "Shopping List",
-    "content": "Milk, Eggs, Bread, Coffee"
+    "id": "21f52897-723f-477b-bbcb-ae4c14620af9",
+    "title": "Makanan Budi",
+    "content": "Ayam \nPasta\nKFC",
+    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728"
   },
   {
-    "id": "2",
-    "title": "Meeting Notes",
-    "content": "Discuss project timeline and tasks for next week"
+    "id": "b1e97ef8-01bc-4f39-b360-0a124999f304",
+    "title": "Minuman Budi",
+    "content": "Cola\nBeer",
+    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728"
   },
   {
-    "id": "7",
-    "title": "Ideas for Blog",
-    "content": "Next.js tutorial, Tailwind tips, React hooks examples"
+    "id": "7976d815-1f94-4074-b9f3-1a66623a3f07",
+    "title": "Makanan Cici",
+    "content": "Pizza",
+    "userId": "7c5caec0-f270-4201-b6be-9210abb887e8"
   }
 ]

@@ -6,13 +6,13 @@ import Navbar from '@/components/Navbar';
 
 export default function CreateNotePage() {
     
+ const router = useRouter();
 
 // protect route
-    const router = useRouter();
-    useEffect(() => {
+useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) router.push('/login');
-  }, []);
+  }, [router]);
 
 
   const [title, setTitle] = useState('');
@@ -25,8 +25,9 @@ export default function CreateNotePage() {
     try {
       const res = await fetch('/api/notes', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + localStorage.getItem('token') },
         body: JSON.stringify({ title, content }),
+        
       });
 
       const data = await res.json();

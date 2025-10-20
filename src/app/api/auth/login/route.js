@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { comparePassword } from '@/lib/bcrypt';
-import { handleError, AppError } from '@/lib/errorHandler';
+import { handleError } from '@/lib/errorHandler';
 import { signToken } from '@/lib/jwt';
 
 const usersFile = path.join(process.cwd(), 'src/data/users.json');
