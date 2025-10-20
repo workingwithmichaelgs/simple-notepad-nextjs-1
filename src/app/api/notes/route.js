@@ -7,7 +7,7 @@ import { v4 as uuidv4 } from 'uuid';
 const notesFile = path.join(process.cwd(), 'src/data/notes.json');
 
 export async function GET(req) {
-    console.log("masuk get notes");
+    // console.log("masuk get notes");
   try {
     const authHeader = req.headers.get('Authorization');
     if (!authHeader)  {
@@ -52,7 +52,8 @@ export async function POST(req) {
       id: uuidv4(),
       title,
       content,
-      userId: user.id
+      userId: user.id,
+      updatedAt: new Date().toISOString()
     };
 
     notes.push(newNote);

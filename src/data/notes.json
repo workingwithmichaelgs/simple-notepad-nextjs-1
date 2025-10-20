@@ -2,14 +2,16 @@
   {
     "id": "21f52897-723f-477b-bbcb-ae4c14620af9",
     "title": "Makanan Budi",
-    "content": "Ayam \nPasta\nKFC\nBurger",
-    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728"
+    "content": "Ayam \nPasta\nKFC\nBurger\nSapi",
+    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728",
+    "updatedAt": "2025-10-20T01:15:59.521Z"
   },
   {
     "id": "b1e97ef8-01bc-4f39-b360-0a124999f304",
     "title": "Minuman Budi",
-    "content": "Cola\nBeer\nFanta\nVodka",
-    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728"
+    "content": "Cola\nBeer\nFanta\nVodka\nKopi",
+    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728",
+    "updatedAt": "2025-10-20T01:16:16.090Z"
   },
   {
     "id": "7976d815-1f94-4074-b9f3-1a66623a3f07",
@@ -20,7 +22,15 @@
   {
     "id": "58000ed0-e685-4344-ba8a-9787fa907105",
     "title": "Mobil Favorit",
-    "content": "BMW",
-    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728"
+    "content": "BMW\nKijang",
+    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728",
+    "updatedAt": "2025-10-20T01:16:27.002Z"
+  },
+  {
+    "id": "46f2b002-b3cd-4746-b79a-b0497e71a131",
+    "title": "Kucing Favorit",
+    "content": "Anggora\nGaroeng\nHitam",
+    "userId": "4c91a6e2-04d9-4ed5-8f51-2210084b2728",
+    "updatedAt": "2025-10-20T02:46:51.900Z"
   }
 ]
